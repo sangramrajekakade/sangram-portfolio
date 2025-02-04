@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sangram's Portfolio - Showcasing Innovation & Code</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+    <style>
+        body {
+            font-family: "Courier New", Courier, monospace;
+            background-color: #1e1e1e;
+            color: #ffffff;
+            margin: 0;
+            padding: 0;
+        }
+
+        h1,
+        h2,
+        h3 {
+            color: #00ff00;
+            border-bottom: 2px solid #00ff00;
+            padding-bottom: 5px;
+            margin-bottom: 10px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        h1 {
+            font-size: 2.8em;
+            text-align: center;
+            margin-top: 10px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 40px;
+            border-radius: 15px;
+            background-color: #2d2d2d;
+            box-shadow: 0 4px 20px rgba(0, 255, 0, 0.5);
+            border: 2px solid #00ff00;
+        }
+
+        .about-me {
+            margin-bottom: 20px;
+            line-height: 1.8;
+            font-size: 1.1em;
+        }
+
+        .skills {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 15px;
+        }
+
+        .skill-item {
+            display: flex;
+            align-items: center;
+            background-color: #3a3a3a;
+            padding: 10px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 255, 0, 0.2);
+        }
+
+        .skill-icon {
+            font-size: 30px;
+            margin-right: 10px;
+        }
+
+        .project {
+            border: 1px solid #00ff00;
+            border-radius: 8px;
+            background-color: #3a3a3a;
+            margin-bottom: 20px;
+            padding: 15px;
+            box-shadow: 0 4px 10px rgba(0, 255, 0, 0.4);
+            transition: transform 0.3s;
+        }
+
+        .project:hover {
+            transform: translateY(-5px);
+        }
+
+        .project ul {
+            margin: 10px 0 0 20px;
+        }
+
+        .contact-section {
+            background-color: #2d2d2d;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        .contact-info {
+            display: inline-block;
+            margin: 10px;
+        }
+
+        .contact-icon {
+            font-size: 28px;
+            color: #ffffff;
+            transition: transform 0.3s, color 0.3s;
+        }
+
+        .contact-icon:hover {
+            transform: scale(1.3);
+            color: #00ff00;
+        }
+
+        footer {
+            margin-top: 20px;
+            text-align: center;
+            font-size: 0.9em;
+            color: #cccccc;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1> <strong>Sangram's Portfolio</strong><br /><small>Showcasing Innovation & Code</small> </h1>
+        <p> Hello! I'm <strong>Sangram Kakade</strong>, a <strong>passionate Python developer</strong> with over
+            <strong>6 years of experience</strong> in building impactful applications that solve real-world challenges.
+        </p>
+        <h2><strong>About Me</strong></h2>
+        <div class="about-me">
+            <p> I am a <strong>dedicated Python developer</strong> specializing in <strong>web and application
+                    development</strong> using Python, Django, and Flask. With strong expertise in <strong>web
+                    scraping</strong> and <strong>OpenAI</strong>, I excel at solving complex challenges with innovative
+                solutions. My technical strengths include <strong>HTTP methods</strong>, <strong>UNIX/Linux
+                    commands</strong>, and adhering strictly to <strong>PEP-8 coding standards</strong>. </p>
+        </div>
+        <h2><strong>Skills</strong></h2>
+        <div class="skills">
+            <div class="skill-item"> <i class="fab fa-python skill-icon"></i><span><strong>Python</strong></span> </div>
+            <div class="skill-item"> <i class="fas fa-code skill-icon"></i><span><strong>Django</strong></span> </div>
+            <div class="skill-item"> <i class="fas fa-code-branch skill-icon"></i><span><strong>Flask</strong></span>
+            </div>
+            <div class="skill-item"> <i class="fab fa-js skill-icon"></i><span><strong>JavaScript</strong></span> </div>
+            <div class="skill-item"> <i class="fas fa-spider skill-icon"></i><span><strong>Web Scraping</strong></span>
+            </div>
+            <div class="skill-item"> <i class="fas fa-brain skill-icon"></i><span><strong>OpenAI & LLM</strong></span>
+            </div>
+            <div class="skill-item"> <i class="fas fa-database skill-icon"></i><span><strong>MySQL</strong></span>
+            </div>
+            <div class="skill-item"> <i class="fab fa-linux skill-icon"></i><span><strong>Linux/UNIX
+                        Commands</strong></span> </div>
+            <div class="skill-item"> <i class="fas fa-database skill-icon"></i><span><strong>Knowledge Graphs</strong></span> </div>
+        </div>
+        <h2><strong>Projects</strong></h2>
+        <p> Here are some of the projects I've worked on, showcasing a variety of my skills and experiences: </p>
+        <div class="project">
+            <h3><strong>Easy Tailor (Tailoring ERP)</strong></h3>
+            <p> Designed a <strong>robust web application</strong> using Python and Django for streamlining tailoring
+                business operations. </p>
+            <ul>
+                <li>Implemented modular architecture ensuring extensibility and reusability.</li>
+                <li>Enhanced workflow efficiency with automated task management features.</li>
+                <li>Integrated role-based access control for secure user management.</li>
+            </ul>
+        </div>
+        <div class="project">
+            <h3><strong>Google & LinkedIn Scraper</strong></h3>
+            <p> Developed <strong>automated scripts</strong> for scraping Google search results and LinkedIn CEO
+                profiles using Python, Selenium, and BeautifulSoup. </p>
+            <ul>
+                <li>Optimized data extraction pipelines to improve processing speed.</li>
+                <li>Implemented dynamic scraping logic to handle JavaScript-rendered content.</li>
+                <li>Ensured data accuracy with comprehensive validation techniques.</li>
+            </ul>
+        </div>
+        <div class="project">
+            <h3><strong>AI Feasibility & Network Expansion Tool</strong></h3>
+            <p> Engineered <strong>RAG-based agents</strong> and sophisticated web scraping tools with OpenAI,
+                LlamaIndex, and Langchain to collect and categorize industrial project data. </p>
+            <ul>
+                <li>Automated data classification for enhanced project analysis.</li>
+                <li>Integrated knowledge graph for advanced data relationship mapping.</li>
+                <li>Improved decision-making processes with real-time data insights.</li>
+            </ul>
+        </div>
+        <h2><strong>Contact Me</strong></h2>
+        <p>Let's connect and <strong>create something amazing!</strong></p>
+        <div class="contact-section"> <a href="mailto:sangramrajekakade@gmail.com" class="contact-info"><i
+                    class="fas fa-envelope contact-icon"></i></a> <a href="https://www.linkedin.com/in/yourprofile"
+                target="_blank" class="contact-info"><i class="fab fa-linkedin contact-icon"></i></a> <a
+                href="https://github.com/yourusername" target="_blank" class="contact-info"><i
+                    class="fab fa-github contact-icon"></i></a> </div>
+        <footer> &copy; 2025 <strong>Sangram Kakade</strong>. All rights reserved.<br /> Last updated on <span
+                id="date"></span>.
+            <script>           document.getElementById("date").innerText = new Date().toLocaleDateString();         </script>
+        </footer>
+    </div>
+</body>
+
+</html>
+    
