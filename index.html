@@ -115,44 +115,58 @@
             font-size: 0.9em;
             color: #cccccc;
         }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 20px;
+                margin: 20px;
+            }
+
+            .skills {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 2em;
+            }
+
+            .skills {
+                grid-template-columns: 1fr;
+            }
+
+            .skill-icon {
+                font-size: 24px;
+            }
+        }
     </style>
 </head>
 
 <body>
     <div class="container">
-        <h1> <strong><small>CodeCraft by Sangram</strong></small></h1>
-        <p> Hello! I'm <strong>Sangram Kakade</strong>, a <strong>passionate Python developer</strong> with over
-            <strong>6 years of experience</strong> in building impactful applications that solve real-world challenges.
-        </p>
+        <h1><strong><small>CodeCraft by Sangram</small></strong></h1>
+        <p>Hello! I'm <strong>Sangram Kakade</strong>, a <strong>passionate Python developer</strong> with over <strong>6 years of experience</strong> in building impactful applications that solve real-world challenges.</p>
         <h2><strong>About Me</strong></h2>
         <div class="about-me">
-            <p> I am a <strong>dedicated Python developer</strong> specializing in <strong>web and application
-                    development</strong> using Python, Django, and Flask. With strong expertise in <strong>web
-                    scraping</strong> and <strong>OpenAI</strong>, I excel at solving complex challenges with innovative
-                solutions. My technical strengths include <strong>HTTP methods</strong>, <strong>UNIX/Linux
-                    commands</strong>, and adhering strictly to <strong>PEP-8 coding standards</strong>. </p>
+            <p>I am a <strong>dedicated Python developer</strong> specializing in <strong>web and application development</strong> using Python, Django, and Flask. With strong expertise in <strong>web scraping</strong> and <strong>OpenAI</strong>, I excel at solving complex challenges with innovative solutions. My technical strengths include <strong>HTTP methods</strong>, <strong>UNIX/Linux commands</strong>, and adhering strictly to <strong>PEP-8 coding standards</strong>.</p>
         </div>
         <h2><strong>Skills</strong></h2>
         <div class="skills">
             <div class="skill-item"> <i class="fab fa-python skill-icon"></i><span><strong>Python</strong></span> </div>
             <div class="skill-item"> <i class="fas fa-code skill-icon"></i><span><strong>Django</strong></span> </div>
-            <div class="skill-item"> <i class="fas fa-code-branch skill-icon"></i><span><strong>Flask</strong></span>
-            </div>
+            <div class="skill-item"> <i class="fas fa-code-branch skill-icon"></i><span><strong>Flask</strong></span> </div>
             <div class="skill-item"> <i class="fab fa-js skill-icon"></i><span><strong>JavaScript</strong></span> </div>
-            <div class="skill-item"> <i class="fas fa-spider skill-icon"></i><span><strong>Web Scraping</strong></span>
-            </div>
-            <div class="skill-item"> <i class="fas fa-brain skill-icon"></i><span><strong>OpenAI & LLM</strong></span>
-            </div>
-            <div class="skill-item"> <i class="fas fa-database skill-icon"></i><span><strong>MySQL</strong></span>
-            </div>
+            <div class="skill-item"> <i class="fas fa-spider skill-icon"></i><span><strong>Web Scraping</strong></span> </div>
+            <div class="skill-item"> <i class="fas fa-brain skill-icon"></i><span><strong>OpenAI & LLM</strong></span> </div>
+            <div class="skill-item"> <i class="fas fa-database skill-icon"></i><span><strong>MySQL</strong></span> </div>
             <div class="skill-item"> <i class="fab fa-linux skill-icon"></i><span><strong>Linux</strong></span> </div>
         </div>
         <h2><strong>Projects</strong></h2>
-        <p> Here are some of the projects I've worked on, showcasing a variety of my skills and experiences: </p>
+        <p>Here are some of the projects I've worked on, showcasing a variety of my skills and experiences:</p>
         <div class="project">
             <h3><strong>Easy Tailor (Tailoring ERP)</strong></h3>
-            <p> Designed a <strong>robust web application</strong> using Python and Django for streamlining tailoring
-                business operations. </p>
+            <p>Designed a <strong>robust web application</strong> using Python and Django for streamlining tailoring business operations.</p>
             <ul>
                 <li>Implemented modular architecture ensuring extensibility and reusability.</li>
                 <li>Enhanced workflow efficiency with automated task management features.</li>
@@ -161,8 +175,7 @@
         </div>
         <div class="project">
             <h3><strong>Google & LinkedIn Scraper</strong></h3>
-            <p> Developed <strong>automated scripts</strong> for scraping Google search results and LinkedIn CEO
-                profiles using Python, Selenium, and BeautifulSoup. </p>
+            <p>Developed <strong>automated scripts</strong> for scraping Google search results and LinkedIn CEO profiles using Python, Selenium, and BeautifulSoup.</p>
             <ul>
                 <li>Optimized data extraction pipelines to improve processing speed.</li>
                 <li>Implemented dynamic scraping logic to handle JavaScript-rendered content.</li>
@@ -171,8 +184,7 @@
         </div>
         <div class="project">
             <h3><strong>AI Feasibility & Network Expansion Tool</strong></h3>
-            <p> Engineered <strong>RAG-based agents</strong> and sophisticated web scraping tools with OpenAI,
-                LlamaIndex, and Langchain to collect and categorize industrial project data. </p>
+            <p>Engineered <strong>RAG-based agents</strong> and sophisticated web scraping tools with OpenAI, LlamaIndex, and Langchain to collect and categorize industrial project data.</p>
             <ul>
                 <li>Automated data classification for enhanced project analysis.</li>
                 <li>Integrated knowledge graph for advanced data relationship mapping.</li>
@@ -181,16 +193,16 @@
         </div>
         <h2><strong>Contact Me</strong></h2>
         <p>Let's connect and <strong>create something amazing!</strong></p>
-        <div class="contact-section"> <a href="mailto:sangramrajekakade@gmail.com" class="contact-info"><i
-                    class="fas fa-envelope contact-icon"></i></a> <a href="https://in.linkedin.com/in/sangram-kakade-32225537"
-                target="_blank" class="contact-info"><i class="fab fa-linkedin contact-icon"></i></a> <a
-                href="https://github.com/sangramrajekakade" target="_blank" class="contact-info"><i
-                    class="fab fa-github contact-icon"></i></a> </div>
-        <footer> &copy; 2025 <strong>Sangram Kakade</strong>. All rights reserved.<br />  <div class="ai-badge">🚀 Powered by AI Magic 😉</div>
-            <script>           document.getElementById("date").innerText = new Date().toLocaleDateString();         </script>
+        <div class="contact-section">
+            <a href="mailto:sangramrajekakade@gmail.com" class="contact-info"><i class="fas fa-envelope contact-icon"></i></a>
+            <a href="https://in.linkedin.com/in/sangram-kakade-32225537" target="_blank" class="contact-info"><i class="fab fa-linkedin contact-icon"></i></a>
+            <a href="https://github.com/sangramrajekakade" target="_blank" class="contact-info"><i class="fab fa-github contact-icon"></i></a>
+        </div>
+        <footer>&copy; 2025 <strong>Sangram Kakade</strong>. All rights reserved.<br />
+            <div class="ai-badge">🚀 Powered by AI Magic 😉</div>
+            <script>document.getElementById("date").innerText = new Date().toLocaleDateString();</script>
         </footer>
     </div>
 </body>
 
 </html>
-    
